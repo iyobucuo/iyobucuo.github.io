@@ -87,18 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Hexo-使用"><a href="#Hexo-使用" class="headerlink" title="Hexo 使用"></a>Hexo 使用</h1><h3 id="0、准备工作"><a href="#0、准备工作" class="headerlink" title="0、准备工作"></a>0、准备工作</h3><ul>
-<li><p>Node.js        recommend version 12.0</p>
-</li>
-<li><p>Git</p>
-</li>
-<li><p>cnpm</p>
-</li>
+<li>Node.js</li>
+<li>Git</li>
+<li>cnpm<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"># 更新</span><br><span class="line">npm -g i cnpm</span><br></pre></td></tr></table></figure></li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"># 更新</span><br><span class="line">npm -g i cnpm</span><br></pre></td></tr></table></figure>
+<h3 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo</span><br><span class="line">hexo -v             <span class="comment"># 安装完毕检测</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo</span><br><span class="line">hexo -v 			<span class="comment"># 安装完毕检测</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog  	<span class="comment"># 初始化创建，会再桌面创建blog文件夹</span></span><br><span class="line"><span class="built_in">cd</span> blog    			<span class="comment"># 进入blog目录</span></span><br><span class="line">cnpm install   		<span class="comment"># 进一步安装hexo所需文件</span></span><br></pre></td></tr></table></figure>
+<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog      <span class="comment"># 初始化创建，会再桌面创建blog文件夹</span></span><br><span class="line"><span class="built_in">cd</span> blog             <span class="comment"># 进入blog目录</span></span><br><span class="line">cnpm install        <span class="comment"># 进一步安装hexo所需文件</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean   		<span class="comment"># 清除所有记录 /hexo c</span></span><br><span class="line">hexo generate  		<span class="comment"># 生成静态网页 /hexo g</span></span><br><span class="line">hexo server    		<span class="comment"># 启动服务 /hexo s</span></span><br></pre></td></tr></table></figure>
 
@@ -114,7 +109,7 @@
 </ul>
 <h4 id="复制项目的-shh-地址"><a href="#复制项目的-shh-地址" class="headerlink" title="复制项目的 shh 地址"></a>复制项目的 shh 地址</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@gitee.com:iyobucuo/iyobucuo.git</span><br></pre></td></tr></table></figure>
 
-<h4 id="修改-config-yml-文件"><a href="#修改-config-yml-文件" class="headerlink" title="修改 _config.yml 文件"></a>修改 _config.yml 文件</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span>                        				<span class="comment"># type为git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@gitee.com:iyobucuo/iyobucuo.git</span>  	<span class="comment"># 仓库的 URL</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<h4 id="修改-config-yml-文件"><a href="#修改-config-yml-文件" class="headerlink" title="修改 _config.yml 文件"></a>修改 _config.yml 文件</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span>                        			<span class="comment"># type为git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@gitee.com:iyobucuo/iyobucuo.git</span>  	<span class="comment"># 仓库的 URL</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -140,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/13/Hexo-%E5%85%A5%E9%97%A8/" data-id="claf7eyu10000jcve5wuj5suf" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/11/13/Hexo-%E5%85%A5%E9%97%A8/" data-id="claf7jdrf0000nsveebeydusi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -189,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/13/hello-world/" data-id="claf7eyug0001jcvebc5582vk" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/11/13/hello-world/" data-id="claf7jdrr0001nsve5e02gh1v" class="article-share-link">Share</a>
       
       
     </footer>
