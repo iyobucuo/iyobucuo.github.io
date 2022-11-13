@@ -123,11 +123,13 @@
 <h4 id="一键部署脚本"><a href="#一键部署脚本" class="headerlink" title="一键部署脚本"></a>一键部署脚本</h4><blockquote>
 <p>包括上传代码到仓库</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 新建 deploy.sh ，内容如下。双击运行即可</span><br><span class="line"></span><br><span class="line">hexo clean</span><br><span class="line">   hexo g </span><br><span class="line">   hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 新建 deploy.sh 文件，内容如下。双击运行即可</span><br><span class="line"></span><br><span class="line">hexo clean</span><br><span class="line">   hexo g </span><br><span class="line">   hexo d</span><br></pre></td></tr></table></figure>
 
 
 
-<h4 id="TODO-待-gitee-实名认证通过后，把-blog-配置到上面"><a href="#TODO-待-gitee-实名认证通过后，把-blog-配置到上面" class="headerlink" title="TODO 待 gitee 实名认证通过后，把 blog 配置到上面"></a>TODO 待 gitee 实名认证通过后，把 blog 配置到上面</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">       github: git@github.com:AshinWang/AshinWang.github.io.git</span><br><span class="line">       coding: git@git.coding.net:AshinWang/AshinWang.coding.me.git</span><br><span class="line">       gitee: git@gitee.com:AshinWang/AshinWang.git</span><br><span class="line">  branch: master</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">#  - type: git                        				# type为git</span><br><span class="line">#	repo: git@gitee.com:iyobucuo/iyobucuo.git  		# 仓库的 URL</span><br><span class="line">#	branch: master</span><br><span class="line">  type: git                        				# type为git</span><br><span class="line">  repo: git@github.com:iyobucuo/iyobucuo.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="同时部署到-Giuhub-和-Gitee"><a href="#同时部署到-Giuhub-和-Gitee" class="headerlink" title="同时部署到 Giuhub 和 Gitee"></a>同时部署到 Giuhub 和 Gitee</h4><pre><code>修改 _config.yml 配置，如下
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git                        				# type为git</span><br><span class="line">    repo: git@github.com:iyobucuo/iyobucuo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line">  - type: git                        				# type为git</span><br><span class="line">    repo: git@gitee.com:iyobucuo/iyobucuo.git</span><br><span class="line">    branch: master</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -138,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/13/Hexo-%E5%85%A5%E9%97%A8/" data-id="claf72tbt0001a8vecimuc2k2" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/11/13/Hexo-%E5%85%A5%E9%97%A8/" data-id="claf77v9m0001okve94uzc0uc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -187,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/13/hello-world/" data-id="claf72tbi0000a8veblq19i46" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/11/13/hello-world/" data-id="claf77v8x0000okve0jxeghwv" class="article-share-link">Share</a>
       
       
     </footer>
