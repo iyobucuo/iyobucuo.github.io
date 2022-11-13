@@ -129,7 +129,7 @@
 
 <h4 id="同时部署到-Giuhub-和-Gitee"><a href="#同时部署到-Giuhub-和-Gitee" class="headerlink" title="同时部署到 Giuhub 和 Gitee"></a>同时部署到 Giuhub 和 Gitee</h4><pre><code>修改 _config.yml 配置，如下
 </code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git                        				# type为git</span><br><span class="line">    repo: git@github.com:iyobucuo/iyobucuo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line">  - type: git                        				# type为git</span><br><span class="line">    repo: git@gitee.com:iyobucuo/iyobucuo.git</span><br><span class="line">    branch: master</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span>                        				<span class="comment"># type为git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">git@github.com:iyobucuo/iyobucuo.github.io.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span>                        				<span class="comment"># type为git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">git@gitee.com:iyobucuo/iyobucuo.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span>                        				<span class="comment"># type为git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">    <span class="attr">github:</span> <span class="string">git@github.com:iyobucuo/iyobucuo.github.io.git</span></span><br><span class="line">    <span class="attr">gitee:</span> <span class="string">git@gitee.com:iyobucuo/iyobucuo.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -140,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/13/Hexo-%E5%85%A5%E9%97%A8/" data-id="claf77v9m0001okve94uzc0uc" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/11/13/Hexo-%E5%85%A5%E9%97%A8/" data-id="claf7eyu10000jcve5wuj5suf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -189,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/13/hello-world/" data-id="claf77v8x0000okve0jxeghwv" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/11/13/hello-world/" data-id="claf7eyug0001jcvebc5582vk" class="article-share-link">Share</a>
       
       
     </footer>
