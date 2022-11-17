@@ -16,15 +16,15 @@
   <meta name="author" content="iyobucuo">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Hexo 使用0、准备工作 Node.js Git cnpm  1234# 安装npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org# 更新npm -g i cnpm  1、安装 Hexo安装12cnpm install -g hexohexo -v             # 安装完毕检测  初始化123hexo init">
+    <meta name="description" content="Hexo 入门0、准备工作 Node.js Git cnpm  1234# 安装npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org# 更新npm -g i cnpm  1、安装 Hexo安装12cnpm install -g hexohexo -v             # 安装完毕检测  初始化123hexo init">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 入门">
 <meta property="og:url" content="http://example.com/2022/11/13/Hexo-%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="iyobucuo">
-<meta property="og:description" content="Hexo 使用0、准备工作 Node.js Git cnpm  1234# 安装npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org# 更新npm -g i cnpm  1、安装 Hexo安装12cnpm install -g hexohexo -v             # 安装完毕检测  初始化123hexo init">
+<meta property="og:description" content="Hexo 入门0、准备工作 Node.js Git cnpm  1234# 安装npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org# 更新npm -g i cnpm  1、安装 Hexo安装12cnpm install -g hexohexo -v             # 安装完毕检测  初始化123hexo init">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-13T09:35:35.000Z">
-<meta property="article:modified_time" content="2022-11-13T11:52:10.602Z">
+<meta property="article:modified_time" content="2022-11-17T15:21:14.316Z">
 <meta property="article:author" content="iyobucuo">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary_large_image">
@@ -273,7 +273,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Hexo-使用"><a href="#Hexo-使用" class="headerlink" title="Hexo 使用"></a>Hexo 使用</h1><h3 id="0、准备工作"><a href="#0、准备工作" class="headerlink" title="0、准备工作"></a>0、准备工作</h3><ul>
+                <h1 id="Hexo-入门"><a href="#Hexo-入门" class="headerlink" title="Hexo 入门"></a>Hexo 入门</h1><h3 id="0、准备工作"><a href="#0、准备工作" class="headerlink" title="0、准备工作"></a>0、准备工作</h3><ul>
 <li>Node.js</li>
 <li>Git</li>
 <li>cnpm</li>
@@ -284,7 +284,7 @@
 
 <h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init blog      <span class="hljs-comment"># 初始化创建，会再桌面创建blog文件夹</span><br><span class="hljs-built_in">cd</span> blog             <span class="hljs-comment"># 进入blog目录</span><br>cnpm install        <span class="hljs-comment"># 进一步安装hexo所需文件</span><br></code></pre></td></tr></table></figure>
 
-<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean   		<span class="hljs-comment"># 清除所有记录 /hexo c</span><br>hexo generate  		<span class="hljs-comment"># 生成静态网页 /hexo g</span><br>hexo server    		<span class="hljs-comment"># 启动服务 /hexo s</span><br></code></pre></td></tr></table></figure>
+<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean   		  <span class="hljs-comment"># 清除所有记录 /hexo c</span><br>hexo generate  		<span class="hljs-comment"># 生成静态网页 /hexo g</span><br>hexo server    		<span class="hljs-comment"># 启动服务 /hexo s</span><br></code></pre></td></tr></table></figure>
 
 <h4 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h4><p><a target="_blank" rel="noopener" href="http://localhost:4000/">localhost:4000 本地预览</a></p>
 <h3 id="2、配置-Gitee"><a href="#2、配置-Gitee" class="headerlink" title="2、配置 Gitee"></a>2、配置 Gitee</h3><h4 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h4><ul>
@@ -307,12 +307,14 @@
 <h4 id="一键部署脚本"><a href="#一键部署脚本" class="headerlink" title="一键部署脚本"></a>一键部署脚本</h4><blockquote>
 <p>包括上传代码到仓库</p>
 </blockquote>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-comment"># 新建 deploy.sh 文件，内容如下。双击运行即可</span><br><br><span class="hljs-attribute">hexo</span> clean<br>   hexo g <br>   hexo d<br></code></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-comment"># 新建 deploy.sh 文件，内容如下。双击运行即可</span><br><br> <span class="hljs-attribute">hexo</span> clean<br> hexo g <br> hexo d<br></code></pre></td></tr></table></figure>
 
 
 
 <h4 id="同时部署到-Giuhub-和-Gitee"><a href="#同时部署到-Giuhub-和-Gitee" class="headerlink" title="同时部署到 Giuhub 和 Gitee"></a>同时部署到 Giuhub 和 Gitee</h4><p>  修改 _config.yml 配置，如下</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">git</span>                        				<span class="hljs-comment"># type为git</span><br>    <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:iyobucuo/iyobucuo.github.io.git</span><br>    <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">git</span>                        				<span class="hljs-comment"># type为git</span><br>    <span class="hljs-attr">repo:</span> <span class="hljs-string">git@gitee.com:iyobucuo/iyobucuo.git</span><br>    <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br><br><span class="hljs-comment"># 或</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span>                        				<span class="hljs-comment"># type为git</span><br>  <span class="hljs-attr">repo:</span> <br>    <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:iyobucuo/iyobucuo.github.io.git</span><br>    <span class="hljs-attr">gitee:</span> <span class="hljs-string">git@gitee.com:iyobucuo/iyobucuo.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="4、写博客"><a href="#4、写博客" class="headerlink" title="4、写博客"></a>4、写博客</h3><h4 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h4><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">hexo <span class="hljs-keyword">new</span> <span class="hljs-string">&quot;博客名称&quot;</span><br></code></pre></td></tr></table></figure>
 
 
 
